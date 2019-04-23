@@ -94,16 +94,18 @@ frontpage: true
 					<div class="tech-btm">
 					<h4>Top stories of the week </h4>
 						<div class="blog-grids">
+							
+							 {% for post in site.posts %}
 							<div class="blog-grid-left">
 								<a href="singlepage.html"><img src="images/6.jpg" class="img-responsive" alt=""/></a>
 							</div>
 							<div class="blog-grid-right">
-								
-								<h5><a href="singlepage.html">Pellentesque dui, non felis. Maecenas male</a> </h5>
+								<h5><a href={{ post.url }}>{{ post.title }}</a> </h5>
 							</div>
 							<div class="clearfix"> </div>
-						</div>
-						
+							 {% endfor %}
+							
+						</div>						
 						
 					</div>
 				</div>
