@@ -11,7 +11,7 @@ frontpage: true
 	<div class="container">
 		 {% assign post = site.posts.first %}
 		<h2>{{ post.title }}</h2>
-		<p>{{ post.excerpt }}</p>
+		<p>{{ post.excerpt | strip_html | strip_newlines | truncate: 156 }}</p>
 		<a href="{{ post.url }}">READ ARTICLE</a>		 
 	</div>
 </div>
