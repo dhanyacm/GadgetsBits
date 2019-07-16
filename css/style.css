@@ -1,3 +1,9 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
 html, body{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 100%;
@@ -284,7 +290,7 @@ i.glyphicon.glyphicon-comment {
 }
 a.blog{
     position: absolute;
-    top: 0.1em;
+    top: 4em;
     background: #386ecf;
     padding: 0.3em 1.8em;
     color: #fff;
