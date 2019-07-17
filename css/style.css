@@ -284,13 +284,13 @@ i.glyphicon.glyphicon-comment {
 }
 .tc-ch {
     background: #fff;
-    padding: 4em;
+    padding: 2em;
     margin-bottom: 1em;
 	 position: relative;
 }
 a.blog{
     position: absolute;
-    top: 4em;
+    top: 2em;
     background: #386ecf;
     padding: 0.3em 1.8em;
     color: #fff;
