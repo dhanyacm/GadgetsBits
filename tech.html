@@ -6,55 +6,41 @@ id: tech
 tags: Technology
 frontpage: false
 ---
-<div class="cont">
+
+<!-- banner -->
+<div class="banner1">
+	
+</div>
+
 <!-- technology -->
-<div class="technology">
+<div class="technology-1">
 	<div class="container">
 		<div class="col-md-9 technology-left">
-		<div class="tech-no">
-			<!-- technology-top -->
-			 {% for post in site.posts %}	
-       {% if post.tags contains page.tags %}
+		<div class="business">
 			
-			<div class="soci">
-				<ul>
-					<li><a href="https://www.facebook.com/sharer/sharer.php?u=<URL>" class="facebook-1"> </a></li>
-					<li><a href="https://twitter.com/share?url=<URL>&text=<TEXT>via=<USERNAME>" class="facebook-1 twitter"> </a></li>
-					<li><a href="https://plus.google.com/share?url=<URL>" class="facebook-1 chrome"> </a></li>
-					<li><a href="mailto:?subject=<SUBJECT>&body=<BODY>"><i class="glyphicon glyphicon-envelope"> </i></a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-print"> </i></a></li>
-					<!--<li><a href="#"><i class="glyphicon glyphicon-plus"> </i></a></li> -->
-				</ul>
-			</div>
-			 <div class="tc-ch">				
-					<div class="tch-img">
-						<a href="post.html"><img src={{ post.icon }} class="img-responsive" alt=""/></a>
+			<!-- technology-top -->
+			{% for post in site.posts %}	
+       			{% if post.tags contains page.tags %}
+			
+		
+			 	<div class="rev-1">				
+					<div class="rev-img">
+						<a href="{{ post.url }}"><img src={{ post.icon }} class="img-responsive" alt=""/></a>
 					</div>
-					<!-- <a class="blog blue" href="singlepage.html">Technology</a> -->
-					<a class="blog blue" href="{{ post.url }}">{{ post.category }}</a>
-					<h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-						<p>{{ post.content }}</p>
+					
+				 	<div class="rev-info">
+						<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+						<p>{{ post.content }} </p>
+					</div>
 						
 					
-						<div class="blog-poast-info">
-							<ul>
-								<!-- <li><i class="glyphicon glyphicon-user"> </i><a class="admin" href="#"> Admin </a></li>-->
-								<li><i class="glyphicon glyphicon-calendar"> </i>{{ post.date | date_to_string }}</li>
-								<!-- <li><i class="glyphicon glyphicon-comment"> </i><a class="p-blog" href="#">3 Comments </a></li>
-								<li><i class="glyphicon glyphicon-heart"> </i><a class="admin" href="#">5 favourites </a></li>
-								<li><i class="glyphicon glyphicon-eye-open"> </i>1.128 views</li> -->
-							</ul>
-						</div>
-			</div>
-			<div class="clearfix"></div>
+					<div class="clearfix"></div> 
+				</div>
+		
 			   {% endif %}
 			 {% endfor %}
 			<!-- technology-top -->
 				
-			
-			
-			
-	
 			</div>
 		</div>
 		
@@ -108,4 +94,4 @@ frontpage: false
 	</div>
 </div>
 <!-- technology -->
-</div>
+
