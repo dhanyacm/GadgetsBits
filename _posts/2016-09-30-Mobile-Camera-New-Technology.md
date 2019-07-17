@@ -5,7 +5,7 @@ title: "Mobile Camera - New Technology"
 
 date: 2016-09-30
 
-icon: /images/blog.jpg
+icon: https://www.easyacc.com/media-center/wp-content/uploads/2016/08/huawei-p9-dual-camera.jpg
 
 category: Technology
 
