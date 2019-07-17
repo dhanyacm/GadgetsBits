@@ -4,7 +4,7 @@ theme: jekyll-theme-cayman
 plugins:
   - jekyll-sitemap
 baseurl: /GadgetsBits
-url: http://dhanyacm.github.io/GadgetsBits
+url: http://dhanyacm.github.io/
 include: ["_pages"]
 permalink: /:title/
 permalink: /404.html
