@@ -6,6 +6,7 @@ id: home
 frontpage: true
 ---
 <div class="cont">
+	
 <!-- banner -->
 <div class="banner">
 	<div class="container">
@@ -14,13 +15,15 @@ frontpage: true
 		<p>{{ post.excerpt | strip_html | strip_newlines | truncate: 156 }}</p>
 		<a href="{{ post.url }}">READ ARTICLE</a>		 
 	</div>
-</div>
+</div>  <!-- banner end -->
 
 <!-- technology -->
 <div class="technology">
 	<div class="container">
-		<div class="col-md-9 technology-left">
+		
+	   <div class="col-md-9 technology-left">
 		<div class="tech-no">
+			
 			<!-- technology-top -->
 			 {% for post in site.posts %}	
 			
@@ -57,15 +60,12 @@ frontpage: true
 			<div class="clearfix"></div>
 			
 			 {% endfor %}
-			<!-- technology-top -->
-				
-			
-			
-			
-	
-			</div>
-		</div>
+			<!-- technology-top -->	
 		
+			</div> <!-- class tech-no -->
+		</div> <!-- technology-left -->
+		
+		</div>
 		<!-- technology-right -->
 		<div class="col-md-3 technology-right">
 				<div class="blo-top">
@@ -113,7 +113,7 @@ frontpage: true
 		</div>
 		<div class="clearfix"></div>
 		<!-- technology-right -->
-	</div>
+	
 </div>
 <!-- technology -->
 
